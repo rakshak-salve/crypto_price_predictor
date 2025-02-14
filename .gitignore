@@ -1,0 +1,16 @@
+# Ignore virtual environment & compiled files
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pkl
+
+# Ignore system files
+.DS_Store
+.env
+.idea/
+.vscode/
+
+# Ignore logs & dataset (if too large)
+*.log
+crypto_prices.csv
