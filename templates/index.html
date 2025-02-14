@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Price Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Crypto Price Predictor</h1>
+        <p>Get the latest AI-based price predictions for Bitcoin and Ethereum.</p>
+        
+        <button id="predictBtn">Get Predictions</button>
+        
+        <div class="result">
+            <h2>Predicted Prices</h2>
+            <p><strong>Bitcoin:</strong> <span id="btcPrice">-</span> USD</p>
+            <p><strong>Ethereum:</strong> <span id="ethPrice">-</span> USD</p>
+            <p><small>Last Updated: <span id="timestamp">-</span></small></p>
+        </div>
+    </div>
+
+    <footer>
+        Developed by <a href="https://linkedin.com/in/rakshaksalve/" target="_blank">Rakshak Salve</a>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
